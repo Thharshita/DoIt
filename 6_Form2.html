@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        background-color:lightgray;
+    }
+    .text-red{
+        color: red;
+    }
+    input{
+        background-color: lightsteelblue;
+
+    }
+</style>
+<br>
+    <form action="login-backend" method="GET">
+        <div id="firstNameField"name="namefield">
+            <label for="fname">Firstname:*</label> </br>
+            <input
+            type="text"
+            id="fname"
+            autocomplete="off"
+            autofocus
+            required>
+        
+        </div>
+        <div id="LastnameField" name="namefield">
+            <label for="lname">Lastname:*</label> </br>
+            <input
+            type="text"
+            id="lname"
+            autocomplete="off"
+            autofocus
+            required>
+        
+        </div>
+
+
+        <div id="EmailField" name="Email">
+            <label for="eid">Email:<span class="text-red">*</span></label> </br>
+            <input
+            type="text"
+            id="email"
+            pattern=".+@gmail\.com" 
+            required>
+        
+        </div>
+
+        <div id="passwordField" name="passwordField">
+            <label for="email">Password:*</label> </br>
+            <input type="password" id="password" name="password" required>  </br>
+        </div>
+
+        <div id="dobField" name="dobField">
+            <label for="dob">DOB:*</label> </br>
+            <input type="date" id="dob" name="dob" required>  </br>
+        </div>
+
+        <div id="ageField" name="ageField">
+            <label for="age">Age:</label> <br>
+            <input type="number" min="0" max="105" id="age">
+        </div>
+
+        <div id="AddressField" name="AddressField">
+            <fieldset>
+                <legend>
+                    Address
+                </legend>
+                
+                <label for="Street">Street</label>
+                <input type="text" name="street" id="street" />
+                <label for="City">City</label>
+                <input type="text" name="City" id="City" />
+                <label for="State">State</label>
+                <input type="text" name="state" id="state" />
+                
+
+            </fieldset>
+        </div>
+
+
+
+        <div id="pincodeField" name="pincodeField" >
+            <label for="pincode">PinCode:</label> <br>
+            <input type="text" id="pincode" name="pincode" maxlength="6">
+        </div>
+
+        <div id="genderField" name="genderField">
+            <fieldset>
+                <legend>Gender</legend>
+                <!-- Here name should be same for 1 radio selection -->
+                <input type="radio" name="gender" id="male" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="male">Female</label>
+                <input type="radio" name="gender" id="other" value="other" />
+                <label for="others">Others</label>
+
+            </fieldset>
+        </div>
+
+        <div id="optionalField" name="optionField">
+            <fieldset>
+                <legend>
+                    Employee Status
+                </legend>
+                <input type="checkBox" name="student" id="student" />
+                <label for=""Student>Student</label>
+                <input type="checkBox" name="unemployed" id="unemployed" />
+                <label for="unemployed">Unemployed</label>
+                <input type="checkBox" name="Part-time" id="P-t">
+                <label for="part-time"> Full-Time</label>
+                <input type="checkBox" name="Full-time" id="F-t" />
+                <label for="Full-time">Full-time</label>
+
+            </fieldset>
+        </div>
+
+        <div id="CountryField" name="CountryField">
+            <label for="country" id="country">Country</label>
+            <br>
+            <select name="country" id="country" >
+                <option value="null"></option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="F">French</option>
+            </select>
+
+        </div>
+
+        
+        <div name="bioField" id="bioField">
+            <label for="bio">Bio:</label>  <br>
+            <textarea name="bio" id="bio" row="10" cols="20"></textarea>
+            
+        </div>
+       
+        <div id="submitbutton">
+        <input type="submit" value="submit" />
+
+    </div>
+<br>
+
+    <div id="clearbutton">
+        <input type="reset" value="reset" left-margin="20"/>
+    </div>
+
+    <div>
+        <label>
+            Helpline:
+            <input type="text" id="hl" name="hl" value="2345678" readonly>
+        </label>
+    </div>
+
+
+    </form>
+</body>
+</html>

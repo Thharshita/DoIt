@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadies exams</title>
+</head>
+<body>
+    <header>
+    <h1>Examinee details</h1>
+    </header>
+    <main>
+    <section name="student info">
+    <form action="#">
+        <label>First name:
+            <input type="text" name="firstname" placeholder="Enter first name" autofocus><br><br>
+        </label>
+        <label>Last name:
+            <input type="text" name="lastname" placeholder="Enter last name"><br><br>
+        </label>
+        <label>Email:
+            <input type="text" name="email" placeholder="Enter email" required> <br><br>
+        </label>
+        <label>Password:
+            <input type="password" name="pass" placeholder="password"><br><br>
+        </label>
+        <label>Date of birth:
+            <input type="date" name="date" placeholder="DOB"><br><br>
+        </label>
+        <label for="f">Gender:
+            <input type="radio" name="gender" id="f" value="Female">Female
+        </label>
+        <label for="m">
+            <input type="radio" name="gender" id="m" value="male">Male<br><br>
+            </label>
+        </section>
+        <section name="address">
+        <label>State:
+            <input type="text" name="state"><br><br>
+        </label>
+        <label>Country:
+            <input type="text" name="country"><br><br>
+        </label>
+        <label>Pincode:
+            <input type="text" name="pin" placeholder="enter Pincode" maxlength="6"><br><br>
+        </label>
+        </section>
+        <section name="exam info">
+        <label>Exam date:
+            <input type="text" name="exam date" value="15-05-2022" disabled><br><br>
+        </label>
+        <label>Exam slot:
+            <input type="time" name="exam slot"><br><br>
+        </label> 
+        <input type="checkbox" name="terms and conditions" id="c1">
+        <label for="c1">I have read terms and conditions<br><br>
+        </label>
+        </section>
+        <input type="submit" value="submit">&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="clear">
+    </form>
+    <p>All the drama in this show is scripted</p>
+</main>
+</body>
+</html>

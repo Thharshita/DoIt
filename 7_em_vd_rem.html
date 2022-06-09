@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-size: 16px;
+    }
+    .lg-font{
+        font-size: 30px;
+    }
+    p.rem{
+        font-size: 1rem;
+    }
+    p.em{
+        font-size: 1em;
+    }
+</style>
+<body>
+    <div class="lg-font">
+        <p class="em">Hello World!!!</p>   
+    </div>
+      <!-- em is based on parent tag that is lg-font, 1rem will make 30px fontsize, 2 rem will make 60px fony size -->
+    <div class="lg-font">
+        <p class="rem">Hello World!!!</p>
+        <!-- rem is based on html not on the parent i.e ig-font, henc 1 em will give 16px, 2 em will five 32 px -->
+    </div>
+
+    <!-- Eg twitter, if u want your text to be same throughout the page u can define it in the html tag -->
+    <!--rem ued for heading where size is max, rem will use it...em is used in article where size is half -->
+    
+
+    
+
+</body>
+</html>

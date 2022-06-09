@@ -1,0 +1,100 @@
+
+<title>Roadies exam</title><head>
+    <style>
+    body {
+        background-color: aqua;
+
+    }
+    </style>
+
+    <body>
+    <fieldset>
+        <legend>Roadie_details</legend>
+        <form action="login-backend" method="GET">
+        <center><h1>Examinee Details</h1></center>
+        <label for="fname">First Name</label>
+        <input type="text" class="fname" name="fname" />
+        <br />
+        <br />l
+        <label for="lname">Last Name</label>
+        <input type="text" class="lname" name="lname" />
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <input type="text" class="email" name="email" />
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" class="password" name="password" />
+        <br />
+        <br />
+        <label for="dob">Date of Birth</label>
+        <input type="date" name=" dob" class="dob" />
+        <br />
+        <br />
+        
+        <fieldset>
+          <legend>Gender</legend>
+
+          <label for="male">Female</label>
+        <input type="radio" name="gender" />
+        
+        <label for="female">Female</label>
+        <input type="radio" name="gender" />
+        
+        <label for="other">other</label>
+        <input type="radio" name="gender" />
+      </fieldset>
+
+    
+        <br />
+        <br />
+        <label for="state">State</label>
+        <select name="state">
+        <option value="Maharashtra" option>uttar pradesh</option>
+        <option value="Rajasthan" option>West Bengal</option>
+        <option value="Delhi" option>Delhi</option>
+        <option value="punjab" option>punjab</option>
+        </select>
+        <br />
+        <br />
+        <label for="country">Country</label>
+        <select name="Country">
+        <option value="India" option>india</option>
+        <option value="Austrailia" option>china</option>
+        <option value="USA" option>America</option>
+        </select>
+        <br />
+        <br />
+        <label for="pincode">Pincode</label><br />
+        <input
+            type="text"
+            pattern="[0-9]{6}"
+            title="Six digits only"
+            placeholder="6 digits"
+            maxlength="6"
+        />
+        <!-- <input type="number" name="pincode" pattern="[1-9]{2}" maxlength="2" /> -->
+        <br />
+        <br />
+        <label for="exam_date">exam date</label><br />
+        <!-- <input type="text" name="date" readonly value="01-05-2022" /></label -->
+
+        <input type="text" value="25/04/2023" name="examdate" readonly />
+        <br />
+        <br />
+        <label for="exam slot">Exam slot</label><br />
+        <input type="time" name="timeslot" />
+        <br />
+        <br />
+        <input type="checkbox" name="checkbox" />
+        <label for="checkbox">I have read all terms and codition.</label>
+        <br />
+        <br />
+        <input type="submit" value="button" />
+        <input type="reset" value="reset" />
+        <footer><p>All the drama in this show is scripted</p></footer>
+      </form>
+    </fieldset>
+  </body>
+</html>
